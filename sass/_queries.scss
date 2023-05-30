@@ -1,0 +1,101 @@
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .navigation-link:link,
+  .navigation-link:visited {
+    padding: 1rem 1.5rem;
+  }
+  body {
+    padding: 4rem;
+  }
+  .hotel_overview {
+    gap: 2rem;
+  }
+  .hotel_overview_feature-box {
+    padding: 1.5rem;
+  }
+  .feature_list {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 60em) {
+  body {
+    padding: 0;
+  }
+  .hotel_details-name {
+    gap: 1.5rem;
+  }
+  .heading-primary {
+    font-size: 2.4rem;
+  }
+  .star-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .flex-horizontal {
+    flex-direction: column;
+  }
+  .navigation {
+    display: block;
+    padding: 0;
+  }
+  .navigation-list {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .navigation-item {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .navigation-copyright {
+    display: none;
+  }
+}
+@media (max-width: 40.625em) {
+  html {
+    font-size: 43.75%;
+  }
+  .hotel_overview {
+    flex-direction: column;
+    gap: 5rem;
+    &_testimonial-box {
+      gap: 2rem;
+      padding: 0 4rem;
+    }
+  }
+  .testimonial {
+    justify-self: center;
+  }
+  .testimonial-text {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 29.6875em) {
+  .header {
+    padding: 1.5rem;
+  }
+  .heading-primary {
+    font-size: 2.2rem;
+  }
+  .hotel_details_location-details {
+    gap: 1.5rem;
+  }
+  .footer_text {
+    font-size: 1.6rem;
+  }
+  .hotel_details-name {
+    padding-left: 0.5rem;
+  }
+  .feature_list-text {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 26.25em){
+    
+}

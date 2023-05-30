@@ -1,0 +1,266 @@
+.hotel_overview {
+  &_feature-box {
+    background-color: var(--grey-light-1);
+    padding: 4rem;
+    color: var(--grey-dark-1);
+    font-size: 1.6rem;
+    box-shadow: 0 1rem 30px rgba(26, 25, 25, 0.3);
+    align-self: flex-start;
+  }
+
+  .feature_text {
+    line-height: 1.4;
+    padding-bottom: 4rem;
+
+    @media (max-width: 40.625em) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .feature_list-box {
+    display: flex;
+    gap: 4rem;
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--grey-dark-3);
+    border-top: 1px solid var(--grey-dark-3);
+  }
+  .feature_list {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+
+    @media (max-width: 26.25em) {
+      gap: 1.5rem;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+
+      @media (max-width: 40.625em) {
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+    }
+
+    &-icon {
+      width: 1.8rem;
+      height: 1.8rem;
+      fill: var(--primary);
+    }
+  }
+  .feature_footer {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--grey-dark-2);
+
+    &-text {
+      font-size: 1.4rem;
+      @media (max-width: 40.625em) {
+        font-size: 1.6rem;
+      }
+    }
+    &-img-box {
+      display: flex;
+    }
+    &-img {
+      width: 3.8rem;
+      border-radius: 50%;
+      border: 2px solid #fff;
+
+      &:not(:first-child) {
+        margin-left: -10px;
+      }
+    }
+  }
+
+  &_testimonial-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .testimonial {
+    background-color: var(--grey-light-1);
+    padding: 3rem 2rem;
+    box-shadow: 0 1rem 30px rgba(26, 25, 25, 0.3);
+    position: relative;
+
+    &-bg {
+      width: 10rem;
+      height: 10rem;
+      fill: var(--grey-light-2);
+      position: absolute;
+      top: -1rem;
+      left: 0;
+    }
+
+    &-text {
+      color: var(--grey-dark-1);
+      font-weight: 500;
+      line-height: 1.4;
+      padding-right: 2rem;
+      margin-bottom: 3rem;
+      font-size: 1.6rem;
+      z-index: 10;
+      position: relative;
+
+      @media (max-width: 40.625em) {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+    &-img {
+      width: 3.8rem;
+      border-radius: 50%;
+      border: 2px solid #fff;
+
+      @media (max-width: 40.625em) {
+        width: 6rem;
+      }
+    }
+    &_info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-user {
+        display: flex;
+        gap: 1.6rem;
+        align-items: center;
+        font-size: 1.4rem;
+      }
+      &-text {
+        display: flex;
+        flex-direction: column;
+
+        &-name {
+          font-weight: 600;
+
+          @media (max-width: 40.625em) {
+            font-size: 1.8rem;
+          }
+        }
+        &-date {
+          font-size: 1.4rem;
+          color: var(--grey-dark-2);
+
+          @media (max-width: 40.625em) {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &-rate {
+        font-size: 2.6rem;
+        color: var(--primary);
+
+        @media (max-width: 40.625em) {
+          font-size: 3.6rem;
+        }
+      }
+    }
+  }
+}
+.btn {
+  text-decoration: none;
+  font-weight: 600;
+  &-primary::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    backface-visibility: hidden;
+    background-color: var(--primary);
+    transition: all 0.3s;
+  }
+  &-primary:hover::before {
+    transform: scaleY(100%);
+    transform-origin: bottom;
+  }
+  &-primary span,
+  &-primary .btn-icon {
+    position: relative;
+    z-index: 1000;
+  }
+
+  &-primary {
+    &:link,
+    &:visited {
+      padding: 0.3rem 1rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--primary);
+      align-self: center;
+      border-bottom: 1px solid var(--primary);
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+    &:hover {
+      color: var(--grey-light-1);
+      transform: translateY(-3px);
+    }
+    &:active {
+      color: var(--grey-light-1);
+      transform: translateY(0);
+    }
+  }
+  &-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: currentColor;
+  }
+
+  &-gradient {
+    &:link,
+    &:visited {
+      overflow: hidden;
+      position: relative;
+      color: var(--grey-light-1);
+      padding: 1.5rem 5rem;
+      background-image: linear-gradient(
+        to bottom right,
+        var(--primary-light),
+        var(--primary-dark)
+      );
+      border-radius: 50px;
+    }
+  }
+  &-gradient::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "ONLY 4 ROOMS LEFT";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to bottom right,
+      var(--primary-light),
+      var(--primary-dark)
+    );
+    color: var(--grey-light-1);
+    font-size: 1.4rem;
+    font-weight: 400;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.5s;
+  }
+  &-gradient:hover::before,
+  &-gradient:active::before {
+    transform: scaleY(100%);
+    transform-origin: top;
+  }
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c2fc12888c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/logo.png" alt="Trillo logo" class="header_logo" />
+      <form class="header_search-container" action="#">
+        <input
+          id="search"
+          type="search"
+          placeholder="Search hotels"
+          class="header_search-input"
+        />
+        <button class="header_search-btn">
+          <svg class="header_search-icon">
+            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </button>
+      </form>
+      <nav class="header_navigation">
+        <div class="header_navigation-icon margin-right-m-small">
+          <svg class="header_navigation-icon-bm">
+            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+          </svg>
+        </div>
+        <div class="header_navigation-icon margin-right-m-small">
+          <svg class="header_navigation-icon-bm">
+            <use xlink:href="img/sprite.svg#icon-chat"></use>
+          </svg>
+        </div>
+        <a class="header_navigation_user" href="mailto:">
+          <img
+            src="img/user.jpg"
+            alt="Jonas"
+            class="header_navigation_user-img"
+          />
+          <span class="header_navigation_user-name">Jonas</span>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div class="flex-horizontal">
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item navigation-item-active">
+              <a href="#" class="navigation-link">
+                <svg class="navigation-link-icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+
+                Hotel</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <svg class="navigation-link-icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
+                Flight
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <svg class="navigation-link-icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+
+                Car Rental</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                <svg class="navigation-link-icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+
+                Tours</a
+              >
+            </li>
+          </ul>
+          <div class="navigation-copyright">
+            <span>&copy; 2023 by trillo. All rights reserved.</span>
+          </div>
+        </nav>
+        <section class="hotel_section">
+          <div class="hotel_gallery">
+            <div class="hotel_gallery-container">
+              <div>
+                <img
+                  src="img/hotel-1.jpg"
+                  alt="Hotel view"
+                  class="hotel_gallery-img"
+                />
+              </div>
+              <div>
+                <img
+                  src="img/hotel-2.jpg"
+                  alt="Hotel pool"
+                  class="hotel_gallery-img"
+                />
+              </div>
+              <div>
+                <img
+                  src="img/hotel-3.jpg"
+                  alt="sea view from the roof"
+                  class="hotel_gallery-img"
+                />
+              </div>
+            </div>
+            <div class="hotel_gallery-details">
+              <div class="hotel_details-name">
+                <h1 class="heading-primary">HOTEL LAS PALMAS</h1>
+                <div class="star_container">
+                  <svg class="star-icon">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg>
+                  <svg class="star-icon">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="hotel_details_location-details">
+                <a href="#" class="location-link">
+                  <svg class="location-icon margin-right-very-small">
+                    <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                  </svg>
+                  Albofiera, Portugal</a
+                >
+                <p class="location-rate">
+                  <span class="location-rate-number">8.6</span>
+                  <span class="location-rate-votes">429 VOTES</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hotel_overview">
+            <div class="hotel_overview_feature-box">
+              <div class="feature_text">
+                <p class="feature_text-paragrapgh margin-bottom-s">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+                <p class="feature_text-paragrapgh">
+                  Velit egestas dui id ornare arcu odio ut sem. Odio tempor orci
+                  dapibus ultrices in iaculis nunc. Sagittis vitae et leo duis
+                  ut diam quam. Ipsum a arcu cursus vitae congue. Mollis aliquam
+                  ut porttitor leo a. Libero nunc consequat interdum varius sit
+                  amet mattis vulputate enim.
+                </p>
+              </div>
+              <div class="feature_list-box">
+                <ul class="feature_list">
+                  <li class="feature_list-item">
+                    <svg class="feature_list-icon">
+                      <use
+                        xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                      ></use>
+                    </svg>
+                    <span class="feature_list-text">Close to the beach</span>
+                  </li>
+                  <li class="feature_list-item">
+                    <svg class="feature_list-icon">
+                      <use
+                        xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                      ></use>
+                    </svg>
+                    <span class="feature_list-text">Free airport shuttle</span>
+                  </li>
+                  <li class="feature_list-item">
+                    <svg class="feature_list-icon">
+                      <use
+                        xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                      ></use>
+                    </svg>
+                    <span class="feature_list-text"
+                      >Air conditioning and heating</span
+                    >
+                  </li>
+                  <li class="feature_list-item">
+                    <svg class="feature_list-icon">
+                      <use
+                        xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                      ></use>
+                    </svg>
+                    <span class="feature_list-text"
+                      >We speak all languages</span
+                    >
+                  </li>
+                </ul>
+
+                <ul class="feature_list">
+                  <li class="feature_list-item">
+                    <svg class="feature_list-icon">
+                      <use
+                        xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                      ></use>
+                    </svg>
+                    <span class="feature_list-text">Breakfast included</span>
+                  </li>
+                  <li class="feature_list-item">
+                    <svg class="feature_list-icon">
+                      <use
+                        xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                      ></use>
+                    </svg>
+                    <span class="feature_list-text">Pets allowed</span>
+                  </li>
+                  <li class="feature_list-item">
+                    <svg class="feature_list-icon">
+                      <use
+                        xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                      ></use>
+                    </svg>
+                    <span class="feature_list-text">Perfect fo families</span>
+                  </li>
+                  <li class="feature_list-item">
+                    <svg class="feature_list-icon">
+                      <use
+                        xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                      ></use>
+                    </svg>
+                    <span class="feature_list-text"
+                      >We speak all languages</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="feature_footer">
+                <p class="feature_footer-text">
+                  Lucy and 3 other friends recommended this hotel.
+                </p>
+                <div class="feature_footer-img-box">
+                  <img src="img/user-1.jpg" alt="" class="feature_footer-img" />
+                  <img src="img/user-2.jpg" alt="" class="feature_footer-img" />
+                  <img src="img/user-3.jpg" alt="" class="feature_footer-img" />
+                  <img src="img/user-4.jpg" alt="" class="feature_footer-img" />
+                </div>
+              </div>
+            </div>
+            <div class="hotel_overview_testimonial-box">
+              <div class="testimonial">
+                <svg class="testimonial-bg">
+                  <use xlink:href="img/sprite.svg#icon-left-quote"></use>
+                </svg>
+
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut sem nulla pharetra diam sit.
+                </p>
+
+                <div class="testimonial_info">
+                  <div class="testimonial_info-user">
+                    <img src="img/user-1.jpg" alt="" class="testimonial-img" />
+                    <p class="testimonial_info-text">
+                      <span class="testimonial_info-text-name">NICK SMITH</span>
+                      <span class="testimonial_info-text-date"
+                        >Mar 23rd, 2023</span
+                      >
+                    </p>
+                  </div>
+                  <span class="testimonial_info-rate">7.8</span>
+                </div>
+              </div>
+
+              <div class="testimonial">
+                <svg class="testimonial-bg">
+                  <use xlink:href="img/sprite.svg#icon-left-quote"></use>
+                </svg>
+
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+
+                <div class="testimonial_info">
+                  <div class="testimonial_info-user">
+                    <img src="img/user-2.jpg" alt="" class="testimonial-img" />
+                    <p class="testimonial_info-text">
+                      <span class="testimonial_info-text-name"
+                        >MARRY THOMAS</span
+                      >
+                      <span class="testimonial_info-text-date"
+                        >Jun 2nd, 2021</span
+                      >
+                    </p>
+                  </div>
+                  <span class="testimonial_info-rate">9.8</span>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-primary">
+                <span>Show all</span>
+                <svg class="btn-icon">
+                  <use
+                    xlink:href="img/sprite_arrow.svg#icon-arrow-long-right"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <p class="footer_text">GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!</p>
+            <a href="#" class="btn btn-gradient"><span>BOOK NOW</span></a>
+          </footer>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
