@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3rem;
+  border-bottom: var(--line);
   &_logo {
     width: 4rem;
   }
@@ -31,6 +32,11 @@
       color: var(--grey-dark-1);
       font-size: 1.6rem;
       font-family: inherit;
+
+      @media only screen and (max-width: 26.25em) {
+        font-size: 1.2rem;
+        text-indent: 10px;
+      }
       &::placeholder {
         color: var(--grey-light-4);
       }
@@ -50,6 +56,11 @@
       width: 2.4rem;
       height: 2.4rem;
       fill: var(--grey-dark-2);
+
+      @media only screen and (max-width: 26.25em) {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
     }
   }
 
@@ -81,7 +92,7 @@
         left: 15px;
         text-align: center;
 
-        @media (max-width: 29.6875em) {
+        @media only screen and (max-width: 29.6875em) {
           top: -8px;
           left: 10px;
           width: 16px;
@@ -173,7 +184,12 @@
       height: 2rem;
       fill: var(--grey-light-1);
 
-      @media (max-width: 26.25em) {
+      @media only screen and (max-width: 29.6875em) {
+        margin-right: 0;
+        margin-bottom: 0.4rem;
+      }
+
+      @media only screen and (max-width: 26.25em) {
         width: 1.6rem;
         height: 1.6rem;
         margin-right: 0.6rem;
@@ -194,10 +210,11 @@
       z-index: 10;
       position: relative;
 
-      @media (max-width: 29.6875em) {
-        font-size: 1.4rem;
+      @media only screen and (max-width: 29.6875em) {
+        font-size: 1.5rem;
+        flex-direction: column;
       }
-      @media (max-width: 26.25em) {
+      @media only screen and (max-width: 26.25em) {
         font-size: 1.2rem;
         padding: 0.5rem !important;
       }
@@ -232,8 +249,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: var(--line);
 
-      @media (max-width: 26.25em) {
+      @media only screen and (max-width: 26.25em) {
         align-items: flex-start;
       }
 
@@ -267,17 +285,17 @@
           padding: 0.5rem 1.5rem;
           color: var(--grey-light-1);
 
-          @media (max-width: 29.6875em) {
+          @media only screen and (max-width: 29.6875em) {
             padding: 0.5rem 1rem;
           }
-          @media (max-width: 26.25em) {
+          @media only screen and (max-width: 26.25em) {
             padding: 1rem;
           }
 
           &-number {
             font-size: 2.4rem;
             font-weight: 500;
-            @media (max-width: 29.6875em) {
+            @media only screen and (max-width: 29.6875em) {
               font-size: 1.8rem;
             }
           }
@@ -301,7 +319,7 @@
     padding-left: 2rem;
     gap: 3rem;
 
-    @media (max-width: 26.25em) {
+    @media only screen and (max-width: 26.25em) {
       display: block;
     }
   }
@@ -310,7 +328,7 @@
     align-items: center;
     gap: 3rem;
 
-    @media (max-width: 26.25em) {
+    @media only screen and (max-width: 26.25em) {
       align-self: stretch;
     }
   }

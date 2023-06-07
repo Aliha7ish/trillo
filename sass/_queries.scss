@@ -1,4 +1,4 @@
-@media (max-width: 75em) {
+@media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
@@ -20,7 +20,7 @@
   }
 }
 
-@media (max-width: 60em) {
+@media only screen and (max-width: 60em) {
   body {
     padding: 0;
   }
@@ -54,7 +54,7 @@
     display: none;
   }
 }
-@media (max-width: 40.625em) {
+@media only screen and (max-width: 40.625em) {
   html {
     font-size: 43.75%;
   }
@@ -74,7 +74,7 @@
   }
 }
 
-@media (max-width: 29.6875em) {
+@media only screen and (max-width: 29.6875em) {
   .header {
     padding: 1.5rem;
   }
@@ -96,6 +96,3 @@
   }
 }
 
-@media (max-width: 26.25em){
-    
-}

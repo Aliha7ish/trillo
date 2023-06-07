@@ -10,7 +10,8 @@
   --grey-dark-2: #777;
   --grey-dark-3: #999;
   --nav-width-v: 18%;
-  --search-width: 35%; }
+  --search-width: 35%;
+  --line: 1px solid var(--grey-light-4); }
 
 html {
   font-size: 62.5%;
@@ -55,7 +56,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .margin-right-m-small {
   margin-right: 4rem; }
-  @media (max-width: 26.25em) {
+  @media only screen and (max-width: 26.25em) {
     .margin-right-m-small {
       margin-right: 2rem; } }
 
@@ -70,7 +71,8 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem; }
+  padding: 1.5rem 3rem;
+  border-bottom: var(--line); }
   .header_logo {
     width: 4rem; }
   .header_search-container {
@@ -92,6 +94,10 @@ input[type="search"]::-webkit-search-results-decoration {
     color: var(--grey-dark-1);
     font-size: 1.6rem;
     font-family: inherit; }
+    @media only screen and (max-width: 26.25em) {
+      .header_search-input {
+        font-size: 1.2rem;
+        text-indent: 10px; } }
     .header_search-input::placeholder {
       color: var(--grey-light-4); }
   .header_search-btn {
@@ -107,6 +113,10 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 2.4rem;
     height: 2.4rem;
     fill: var(--grey-dark-2); }
+    @media only screen and (max-width: 26.25em) {
+      .header_search-icon {
+        width: 1.6rem;
+        height: 1.6rem; } }
   .header_navigation {
     display: flex;
     align-items: center; }
@@ -131,7 +141,7 @@ input[type="search"]::-webkit-search-results-decoration {
         top: -8px;
         left: 15px;
         text-align: center; }
-        @media (max-width: 29.6875em) {
+        @media only screen and (max-width: 29.6875em) {
           .header_navigation-icon::after {
             top: -8px;
             left: 10px;
@@ -197,7 +207,11 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 2rem;
     height: 2rem;
     fill: var(--grey-light-1); }
-    @media (max-width: 26.25em) {
+    @media only screen and (max-width: 29.6875em) {
+      .navigation-link-icon {
+        margin-right: 0;
+        margin-bottom: 0.4rem; } }
+    @media only screen and (max-width: 26.25em) {
       .navigation-link-icon {
         width: 1.6rem;
         height: 1.6rem;
@@ -214,10 +228,11 @@ input[type="search"]::-webkit-search-results-decoration {
     transition-delay: 0.2s;
     z-index: 10;
     position: relative; }
-    @media (max-width: 29.6875em) {
+    @media only screen and (max-width: 29.6875em) {
       .navigation-link:link, .navigation-link:visited {
-        font-size: 1.4rem; } }
-    @media (max-width: 26.25em) {
+        font-size: 1.5rem;
+        flex-direction: column; } }
+    @media only screen and (max-width: 26.25em) {
       .navigation-link:link, .navigation-link:visited {
         font-size: 1.2rem;
         padding: 0.5rem !important; } }
@@ -243,8 +258,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .hotel_gallery-details {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  @media (max-width: 26.25em) {
+  align-items: center;
+  border-bottom: var(--line); }
+  @media only screen and (max-width: 26.25em) {
     .hotel_gallery-details {
       align-items: flex-start; } }
   .hotel_gallery-details .location-link:link, .hotel_gallery-details .location-link:visited {
@@ -268,16 +284,16 @@ input[type="search"]::-webkit-search-results-decoration {
     text-align: center;
     padding: 0.5rem 1.5rem;
     color: var(--grey-light-1); }
-    @media (max-width: 29.6875em) {
+    @media only screen and (max-width: 29.6875em) {
       .hotel_gallery-details .location-rate {
         padding: 0.5rem 1rem; } }
-    @media (max-width: 26.25em) {
+    @media only screen and (max-width: 26.25em) {
       .hotel_gallery-details .location-rate {
         padding: 1rem; } }
     .hotel_gallery-details .location-rate-number {
       font-size: 2.4rem;
       font-weight: 500; }
-      @media (max-width: 29.6875em) {
+      @media only screen and (max-width: 29.6875em) {
         .hotel_gallery-details .location-rate-number {
           font-size: 1.8rem; } }
     .hotel_gallery-details .location-rate-votes {
@@ -291,7 +307,7 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: center;
   padding-left: 2rem;
   gap: 3rem; }
-  @media (max-width: 26.25em) {
+  @media only screen and (max-width: 26.25em) {
     .hotel_details-name {
       display: block; } }
 
@@ -299,7 +315,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   align-items: center;
   gap: 3rem; }
-  @media (max-width: 26.25em) {
+  @media only screen and (max-width: 26.25em) {
     .hotel_details_location-details {
       align-self: stretch; } }
 
@@ -347,7 +363,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .hotel_overview .feature_text {
   line-height: 1.4;
   padding-bottom: 4rem; }
-  @media (max-width: 40.625em) {
+  @media only screen and (max-width: 40.625em) {
     .hotel_overview .feature_text {
       font-size: 1.8rem; } }
 
@@ -363,14 +379,14 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   gap: 0.5rem;
   flex-direction: column; }
-  @media (max-width: 26.25em) {
+  @media only screen and (max-width: 26.25em) {
     .hotel_overview .feature_list {
       gap: 1.5rem; } }
   .hotel_overview .feature_list-item {
     display: flex;
     align-items: center;
     gap: 0.8rem; }
-    @media (max-width: 40.625em) {
+    @media only screen and (max-width: 40.625em) {
       .hotel_overview .feature_list-item {
         font-size: 1.8rem;
         font-weight: 600; } }
@@ -387,7 +403,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: var(--grey-dark-2); }
   .hotel_overview .feature_footer-text {
     font-size: 1.4rem; }
-    @media (max-width: 40.625em) {
+    @media only screen and (max-width: 40.625em) {
       .hotel_overview .feature_footer-text {
         font-size: 1.6rem; } }
   .hotel_overview .feature_footer-img-box {
@@ -426,7 +442,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 1.6rem;
     z-index: 10;
     position: relative; }
-    @media (max-width: 40.625em) {
+    @media only screen and (max-width: 40.625em) {
       .hotel_overview .testimonial-text {
         font-size: 2rem;
         font-weight: 600; } }
@@ -434,7 +450,7 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 3.8rem;
     border-radius: 50%;
     border: 2px solid #fff; }
-    @media (max-width: 40.625em) {
+    @media only screen and (max-width: 40.625em) {
       .hotel_overview .testimonial-img {
         width: 6rem; } }
   .hotel_overview .testimonial_info {
@@ -451,19 +467,19 @@ input[type="search"]::-webkit-search-results-decoration {
       flex-direction: column; }
       .hotel_overview .testimonial_info-text-name {
         font-weight: 600; }
-        @media (max-width: 40.625em) {
+        @media only screen and (max-width: 40.625em) {
           .hotel_overview .testimonial_info-text-name {
             font-size: 1.8rem; } }
       .hotel_overview .testimonial_info-text-date {
         font-size: 1.4rem;
         color: var(--grey-dark-2); }
-        @media (max-width: 40.625em) {
+        @media only screen and (max-width: 40.625em) {
           .hotel_overview .testimonial_info-text-date {
             font-size: 1.6rem; } }
     .hotel_overview .testimonial_info-rate {
       font-size: 2.6rem;
       color: var(--primary); }
-      @media (max-width: 40.625em) {
+      @media only screen and (max-width: 40.625em) {
         .hotel_overview .testimonial_info-rate {
           font-size: 3.6rem; } }
 
@@ -511,35 +527,50 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 1.8rem;
     height: 1.8rem;
     fill: currentColor; }
-  .btn-gradient:link, .btn-gradient:visited {
-    overflow: hidden;
+  .btn-cta {
     position: relative;
-    color: var(--grey-light-1);
-    padding: 1.5rem 5rem;
-    background-image: linear-gradient(to bottom right, var(--primary-light), var(--primary-dark));
-    border-radius: 50px; }
-  .btn-gradient::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "ONLY 4 ROOMS LEFT";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom right, var(--primary-light), var(--primary-dark));
-    color: var(--grey-light-1);
-    font-size: 1.4rem;
-    font-weight: 400;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: all 0.5s; }
-  .btn-gradient:hover::before, .btn-gradient:active::before {
-    transform: scaleY(100%);
-    transform-origin: top; }
+    font-size: 1.5rem;
+    border: none;
+    outline: hidden;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden; }
+    .btn-cta > * {
+      height: 100%;
+      width: 100%;
+      display: inline-block;
+      transition: all 0.2s; }
+    .btn-cta__visible {
+      padding: 2rem 6rem; }
+    .btn-cta__invisible {
+      position: absolute;
+      left: 0;
+      top: -100%;
+      padding: 2rem 0; }
+    .btn-cta:hover {
+      background-image: linear-gradient(to left, var(--primary-light), var(--primary-dark)); }
+    .btn-cta:hover .btn-cta__invisible {
+      top: 0; }
+    .btn-cta:hover .btn-cta__visible {
+      transform: translateY(100%); }
+    .btn-cta:focus {
+      animation: focusing 0.8s infinite; }
 
-@media (max-width: 75em) {
+@keyframes focusing {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0); }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.35); }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0); } }
+
+@media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%; }
   .navigation-link:link,
@@ -554,7 +585,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .feature_list {
     gap: 0.8rem; } }
 
-@media (max-width: 60em) {
+@media only screen and (max-width: 60em) {
   body {
     padding: 0; }
   .hotel_details-name {
@@ -579,7 +610,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .navigation-copyright {
     display: none; } }
 
-@media (max-width: 40.625em) {
+@media only screen and (max-width: 40.625em) {
   html {
     font-size: 43.75%; }
   .hotel_overview {
@@ -593,7 +624,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .testimonial-text {
     font-size: 2.2rem; } }
 
-@media (max-width: 29.6875em) {
+@media only screen and (max-width: 29.6875em) {
   .header {
     padding: 1.5rem; }
   .heading-primary {
